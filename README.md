@@ -1,4 +1,4 @@
-# passport-cognito-oauth2
+# passport-cognito-oauth2-v2
 [Passport](https://github.com/jaredhanson/passport) 
 [strategy](https://github.com/jaredhanson/passport-strategy) for authenticating and fetching profile data from 
 [AWS Cognito](https://aws.amazon.com/cognito/) 
@@ -28,7 +28,8 @@ consumer key, consumer secret, and callback URL.
       clientDomain: 'https://myapp.auth.us-west-2.amazoncognito.com',
       clientID: '123-456-789',
       clientSecret: 'shhh-its-a-secret',
-      region: 'us-west-2'
+      region: 'us-west-2',
+      state: 'custom-state'
     };
    
     function verify(accessToken, refreshToken, profile, done) {
@@ -50,10 +51,10 @@ For example, as route middleware in an [Express](http://expressjs.com/)
 application:
 
     app.get('/auth/cognito',
-      passport.authenticate('cognito-oauth2')
+      passport.authenticate('cognito-oauth2-v2')
     );
     app.get('/auth/cognito/callback',
-      passport.authenticate('cognito-oauth2'),
+      passport.authenticate('cognito-oauth2-v2'),
       (req,res) => res.send(req.user)  
     );
 
