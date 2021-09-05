@@ -8,7 +8,7 @@
 
 ## Install
 
-    $ npm install passport-cognito-oauth2
+    $ npm install passport-cognito-oauth2-v2
     
 ## Usage
 
