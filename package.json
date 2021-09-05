@@ -1,9 +1,9 @@
 {
   "author": {
-    "name": "ebuychance"
+    "name": "iotflows"
   },
   "bugs": {
-    "url": "https://github.com/ebuychance/passport-cognito-oauth2/issues"
+    "url": "https://github.com/iotflows/passport-cognito-oauth2-v2/issues"
   },
   "dependencies": {
     "aws-sdk": "^2.303.0",
@@ -11,7 +11,7 @@
     "util": "^0.10.4"
   },
   "description": "Passport strategy for authenticating and fetching profile data from AWS Cognito User pools using OAuth2 and the Amazon SDK",
-  "homepage": "https://github.com/ebuychance/passport-cognito-oauth2#readme",
+  "homepage": "https://github.com/iotflows/passport-cognito-oauth2-v2#readme",
   "keywords": [
     "aws",
     "cognito",
@@ -21,13 +21,13 @@
   ],
   "license": "MIT",
   "main": "lib/index.js",
-  "name": "passport-cognito-oauth2",
+  "name": "passport-cognito-oauth2-v2",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ebuychance/passport-cognito-oauth2.git"
+    "url": "git+https://github.com/iotflows/passport-cognito-oauth2-v2.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.1.1"
+  "version": "0.1.2"
 }
