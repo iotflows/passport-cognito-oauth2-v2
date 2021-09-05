@@ -21,7 +21,7 @@ credentials and calls `done` providing a user, as well as `options` specifying a
 consumer key, consumer secret, and callback URL.
     
     const passport = require('passport')
-    const CognitoOAuth2Strategy = require('passport-cognito-oauth2');
+    const CognitoOAuth2Strategy = require('passport-cognito-oauth2-v2');
     
     const options = {
       callbackURL: 'https://myapp.com/auth/cognito/callback',
@@ -44,7 +44,7 @@ consumer key, consumer secret, and callback URL.
     
 #### Authenticate Requests
 
-Use `passport.authenticate()`, specifying the `'cognito-oauth2'` strategy, to
+Use `passport.authenticate()`, specifying the `'cognito-oauth2-v2'` strategy, to
 authenticate requests.
 
 For example, as route middleware in an [Express](http://expressjs.com/)
